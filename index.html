@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Navbar */
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px;
+      margin: 20px auto;
+      width: 80%;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: #667eea;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 120px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+    }
+    .project-card h3 {
+      margin: 15px 0;
+      color: #333;
+    }
+    .project-card p {
+      padding: 0 15px 20px;
+      color: #666;
+      font-size: 14px;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .project-card a:hover {
+      background: #764ba2;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact */
+    .contact {
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .contact label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+    }
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .contact button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #764ba2;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Zohaib's Portfolio</h1>
+    <p>Frontend Developer | HTML | CSS | JavaScript</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Zohaib, a web developer in training. I enjoy creating websites and learning new technologies.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="zh 28.jpeg" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A personal website made using HTML, CSS, and Flexbox.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="zh 28.jpeg" alt="Project 2">
+        <h3>Login Form</h3>
+        <p>A simple responsive login form using HTML & CSS.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="zh 28.jpeg" alt="Project 3">
+        <h3>E-commerce Page</h3>
+        <p>Sample e-commerce front page layout using Flexbox & Grid.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <!-- Replace action URL with your Formspree link -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Zohaib | All Rights Reserved</p>
+    <p>
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="mailto:example@gmail.com">Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
